@@ -101,37 +101,50 @@ def build_api() -> AliexpressApi:
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        "🔥 Welcome to AlixDealsBot\n"
-        "ברוכים הבאים ל־AlixDealsBot 🚀\n\n"
+        "🔥 *Welcome to AliDeals* 🔥\n\n"
 
-        "🛍️ Find trending AliExpress deals instantly\n"
-        "מצא מוצרים חמים ודילים שווים תוך שניות.\n\n"
+        "🛍 Find trending AliExpress products instantly 🚀\n"
+        "דילים חמים ומוצרים ויראליים — ישר לטלגרם.\n\n"
 
-        "💡 Just type what you're looking for:\n"
-        "פשוט כתבו מה אתם מחפשים:\n\n"
+        "💡 *Search in Hebrew or English:*\n\n"
 
-        "🔎 iphone cable\n"
-        "🔎 gaming mouse\n"
-        "🔎 מטען נייד\n"
-        "🔎 אוזניות בלוטוס\n\n"
+        "🔎 Examples:\n"
+        "• iphone charger\n"
+        "• gaming mouse\n"
+        "• מטען נייד\n"
+        "• אוזניות בלוטוס\n"
 
-        "⚡ You'll get curated products, prices & direct shopping links.\n"
-        "תקבלו מוצרים מומלצים + מחירים + קישורים ישירים לקנייה 🛒"
+        "⚡ *What you'll get:*\n"
+        "• Trending products\n"
+        "• Direct AliExpress links\n"
+        "• Smart matching deals\n"
+        "• Fast results in seconds\n\n"
+
+        "🌍 Hebrew + English support\n"
+        "💸 Smart shopping starts here🛒.",
     )
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        "📦 Send any product name in Hebrew or English.\n"
-        "שלחו שם מוצר בעברית או באנגלית.\n\n"
+       "📌 *How to use AliDeals*\n\n"
 
-        "Examples:\n"
+        "Type any product name in Hebrew or English 👇\n"
+        "שלחו שם של מוצר — בעברית או באנגלית.\n\n"
+
+        "🔎 Examples:\n"
         "• iphone charger\n"
         "• smartwatch\n"
         "• מטען לאייפון\n"
-        "• מקלדת גיימינג\n\n"
+        "• אוזניות גיימינג\n\n"
 
-        "🚀 AlixDealsBot will find the best matching deals for you."
+        "🚀 AliDeals instantly finds:\n"
+        "• Viral AliExpress products\n"
+        "• Direct shopping links\n"
+        "• Trending gadgets\n"
+        "• Best matching deals\n\n"
+
+        "⚡ Fast • Smart • Simple",
     )
 
 
