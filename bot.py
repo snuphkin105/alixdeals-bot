@@ -21,7 +21,7 @@ ALIEXPRESS_TRACKING_ID = os.getenv("ALIEXPRESS_TRACKING_ID", "telegram_bot")
 
 DEFAULT_CURRENCY = os.getenv("DEFAULT_CURRENCY", "USD")
 DEFAULT_LANGUAGE = os.getenv("DEFAULT_LANGUAGE", "EN")
-PRODUCTS_COUNT = int(os.getenv("PRODUCTS_COUNT", "5"))
+PRODUCTS_COUNT = int(os.getenv("PRODUCTS_COUNT", "3"))
 
 
 def required_env() -> None:
@@ -101,17 +101,37 @@ def build_api() -> AliexpressApi:
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        "Hi 👋\n"
-        "Send me any product name in English or Hebrew, and I will find 5 AliExpress deals for you.\n\n"
-        "Example: portable charger\n"
-        "Example: מטען נייד"
+        "🔥 Welcome to AlixDealsBot\n"
+        "ברוכים הבאים ל־AlixDealsBot 🚀\n\n"
+
+        "🛍️ Find trending AliExpress deals instantly\n"
+        "מצא מוצרים חמים ודילים שווים תוך שניות.\n\n"
+
+        "💡 Just type what you're looking for:\n"
+        "פשוט כתבו מה אתם מחפשים:\n\n"
+
+        "🔎 iphone cable\n"
+        "🔎 gaming mouse\n"
+        "🔎 מטען נייד\n"
+        "🔎 אוזניות בלוטוס\n\n"
+
+        "⚡ You'll get curated products, prices & direct shopping links.\n"
+        "תקבלו מוצרים מומלצים + מחירים + קישורים ישירים לקנייה 🛒"
     )
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        "Just send a product name.\n"
-        "I will search AliExpress and send 5 affiliate product links."
+        "📦 Send any product name in Hebrew or English.\n"
+        "שלחו שם מוצר בעברית או באנגלית.\n\n"
+
+        "Examples:\n"
+        "• iphone charger\n"
+        "• smartwatch\n"
+        "• מטען לאייפון\n"
+        "• מקלדת גיימינג\n\n"
+
+        "🚀 AlixDealsBot will find the best matching deals for you."
     )
 
 
